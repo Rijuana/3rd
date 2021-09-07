@@ -25,7 +25,7 @@
         <h4>Formulaire de configuration automatique de votre nouvel environnement de gestion de votre organisme de formation.</h4>
     
         <h4 >Merci de remplir les informations suivantes pour la création de votre CRM/LMS.</h4>
-           <h4>Informations concernant votre organisme de formation : </h2>
+           <h4>Informations concernant votre organisme de formation : </h4>
            <form>
             
                 <label class="mdc-text-field mdc-text-field--filled">
@@ -278,8 +278,267 @@
                   <div class="mdc-text-field-helper-line">
                     <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Servira pour les correspondances avec Eforma. Toute demande de changement nécessite une confirmation émanant de cette adresse email. </div>
                   </div>
+
+                  <h4> Informations concernant l’envoi des emails automatiques</h4>
+
+                  <label class="mdc-text-field mdc-text-field--filled">
+                    <span class="mdc-text-field__ripple"></span>
+                    <h5 class="mdc-floating-label" id="my-label-id" style="color:black">•  	Adresse email :    </h5>
+                    <input class="mdc-text-field__input" type="text"
+                           aria-labelledby="my-label-id"
+                           aria-controls="my-helper-id"
+                           aria-describedby="my-helper-id">
+                    <span class="mdc-line-ripple"></span>
+                  </label>
+                  <div class="mdc-text-field-helper-line">
+                    <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Servira pour l’envoi de toutes les correspondances avec vos apprenants telles que l’envoi des contrats, l’envoi de notifications, etc… </div>
+                  </div>
+
+                  <label class="mdc-text-field mdc-text-field--filled">
+                    <span class="mdc-text-field__ripple"></span>
+                    <h5 class="mdc-floating-label" id="my-label-id" style="color:black">•  		Serveur :    </h5>
+                    <input class="mdc-text-field__input" type="text"
+                           aria-labelledby="my-label-id"
+                           aria-controls="my-helper-id"
+                           aria-describedby="my-helper-id">
+                    <span class="mdc-line-ripple"></span>
+                  </label>
+                  <div class="mdc-text-field-helper-line">
+                    <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">En fonction de l'hébergeur, le serveur de configuration des emails est différent. Vous pourrez facilement trouver l’information en tapant sur google “Configuration smtp avec le nom de votre hébergeur"</div>
+                  </div>
     
-           </form>
+                  <label class="mdc-text-field mdc-text-field--filled">
+                    <span class="mdc-text-field__ripple"></span>
+                    <h5 class="mdc-floating-label" id="my-label-id" style="color:black">•  	Port :    </h5>
+                    <input class="mdc-text-field__input" type="text"
+                           aria-labelledby="my-label-id"
+                           aria-controls="my-helper-id"
+                           aria-describedby="my-helper-id">
+                    <span class="mdc-line-ripple"></span>
+                  </label>
+                  <div class="mdc-text-field-helper-line">
+                    <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Généralement, le port sera 25, 465 ou 587. En fonction de l'hébergeur, le port pour l’envoi des emails est différent. Vous pourrez facilement trouver l’information en tapant sur google “Configuration smtp avec le nom de votre hébergeur"</div>
+                  </div>
+
+                  <label class="mdc-text-field mdc-text-field--filled">
+                    <span class="mdc-text-field__ripple"></span>
+                    <h5 class="mdc-floating-label" id="my-label-id" style="color:black">•  	Mot de passe  :    </h5>
+                    <input class="mdc-text-field__input" type="text"
+                           aria-labelledby="my-label-id"
+                           aria-controls="my-helper-id"
+                           aria-describedby="my-helper-id">
+                    <span class="mdc-line-ripple"></span>
+                  </label>
+                  <div class="mdc-text-field-helper-line">
+                    <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Le mot de passe que vous avez défini pour cette adresse email. </div>
+                  </div>
+
+                  <label class="mdc-text-field mdc-text-field--filled">
+                    <span class="mdc-text-field__ripple"></span>
+                    <h5 class="mdc-floating-label" id="my-label-id" style="color:black">• 	TSL/SSL   :    </h5>
+                    <input class="mdc-text-field__input" type="text"
+                           aria-labelledby="my-label-id"
+                           aria-controls="my-helper-id"
+                           aria-describedby="my-helper-id">
+                    <span class="mdc-line-ripple"></span>
+                  </label>
+                  <div class="mdc-text-field-helper-line">
+                    <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Généralement, SSL. En fonction de l'hébergeur, le port pour l’envoi des emails est différent. Vous pourrez facilement trouver l’information en tapant sur google “Configuration smtp avec le nom de votre hébergeur". </div>
+                  </div>
+
+
+                  <h4> Informations concernant le médiateur</h4>
+                  <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Dans le cas où votre organisme de formation est certifié Qualiopi ou fait financer des formations pour ses apprenants par le CPF, vous devez avoir un médiateur qui interviendra en cas de litige avec un apprenant. </div>
+                  <br>
+                  <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >-	Nom de la société du médiateur : </span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+
+                  <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >	-	Adresse du médiateur  : </span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+
+                  <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >	-	Ville du médiateur  : </span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+
+                  <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >	-	Code Postal du médiateur  : </span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+
+                  <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >-	Site du médiateur  : </span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+
+                  <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >-	E-mail du médiateur : </span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+          
+                  <h4> Informations concernant la compagnie d’assurance</h4>
+                  <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Dans le cas où votre organisme de formation est certifié Qualiopi, vous devez avoir une compagnie d’assurance . </div>
+                  <br>
+                  <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >-	Nom de la société de la compagnie d’assurance: </span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+
+                  <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >-	Adresse de la compagnie d’assurance  : </span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+
+                  <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >	-	Ville de la compagnie d’assurance  : </span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+
+                  <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >	-	Code Postal de la compagnie d’assurance   : </span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+
+                  <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >-	Téléphone de la compagnie d’assurance  : </span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+          
+
+                  
+                  <h4>Pièces jointes à fournir pour le bon fonctionnement du CRM</h4>
+
+
+                  <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="my-label-id" style="color: black" >-	Téléphone de la compagnie d’assurance  : </span>
+                  </span>
+                  <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Dans le cas où votre organisme de formation est certifié Qualiopi, vous devez avoir une compagnie d’assurance . </div>
+                      <div>
+                        <input type="file" class="mdc-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                        
+                      </div>
+                  
+                    <br>
+
+                    <span class="mdc-notched-outline__notch">
+                      <span class="mdc-floating-label" id="my-label-id" style="color: black" >-	Logo entreprise sombre   :(si existant) </span>
+                    </span>
+                    <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Dans le cas où votre organisme de formation est certifié Qualiopi, vous devez avoir une compagnie d’assurance . </div>
+                        <div>
+                          <input type="file" class="mdc-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                          
+                        </div>
+                    
+                      <br>
+
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id" style="color: black" >-		Favicon  : </span>
+                      </span>
+                      <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Le favicon sert à pouvoir différencier votre CRM parmi les autres onglets ouverts. C'est un élément graphique destiné à identifier plus facilement les sites dans les listes et barres de favoris de votre navigateur web comme Google Chrome ou Mozilla Firefox par exemple </div>
+                          <div>
+                            <input type="file" class="mdc-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                            
+                          </div>
+                      
+                        <br>
+
+                        <span class="mdc-notched-outline__notch">
+                          <span class="mdc-floating-label" id="my-label-id" style="color: black" >-	Cachet de l'entreprise : </span>
+                        </span>
+                        <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Servira pour le remplissage automatique des documents tels que les contrats, les feuilles d'émargement, etc… Le cachet doit être au format PNG et doit avoir un fond transparent. </div>
+                            <div>
+                              <input type="file" class="mdc-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                              
+                            </div>
+                        
+                          <br>
+
+                          <span class="mdc-notched-outline__notch">
+                            <span class="mdc-floating-label" id="my-label-id" style="color: black" >-	Signature du directeur de l’OF  : </span>
+                          </span>
+                          <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true" style="color: grey">Servira pour le remplissage automatique des documents tels que les contrats, les feuilles d'émargement, etc… Le cachet doit être au format PNG et doit avoir un fond transparent. </div>
+                              <div>
+                                <input type="file" class="mdc-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                
+                              </div>
+                          
+                            <br>
+                    
+                            <button class="mdc-button mdc-button--outlined ">
+                              <span class="mdc-button__ripple"></span>
+                              <span class="mdc-button__label">SUBMIT</span>
+                            </button>
+                </form>
     
            
           </div>
